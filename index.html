@@ -6,6 +6,9 @@
   <title>Ventebra — Cloud & DevOps Technical Leadership</title>
   <meta name="description" content="Senior cloud & DevOps technical leadership for agencies and prime contractors who cannot afford execution risk." />
 
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
     body {
       margin: 0;
@@ -16,7 +19,7 @@
     }
 
     header {
-      background: #0a2540;
+      background: url('images/hero-bg.jpg') no-repeat center/cover, #0a2540;
       color: #ffffff;
       padding: 64px 20px;
       text-align: center;
@@ -80,6 +83,20 @@
       border-left: 4px solid #0078ff;
       padding: 20px;
       margin: 24px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .highlight img {
+      width: 40px;
+      margin-right: 12px;
+    }
+
+    .process-diagram {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 24px auto;
     }
 
     footer {
@@ -92,6 +109,11 @@
 
     .contact {
       text-align: center;
+    }
+
+    .icon-list li i {
+      color: #0078ff;
+      margin-right: 8px;
     }
   </style>
 </head>
@@ -118,8 +140,11 @@
   </p>
 
   <div class="highlight">
-    <strong>This is not staff augmentation.</strong><br />
-    This is senior technical accountability backed by a proven offshore execution model.
+    <img src="images/shield-icon.png" alt="Security Icon">
+    <div>
+      <strong>This is not staff augmentation.</strong><br />
+      This is senior technical accountability backed by a proven offshore execution model.
+    </div>
   </div>
 </section>
 
@@ -128,19 +153,10 @@
 <section>
   <h2>Who We Work With</h2>
 
-  <ul>
-    <li>
-      <strong>Consulting Firms & Agencies</strong> — Expand delivery capacity without adding execution risk
-      or permanent headcount.
-    </li>
-    <li>
-      <strong>Systems Integrators</strong> — Stabilize cloud and DevOps programs with senior oversight
-      and disciplined execution.
-    </li>
-    <li>
-      <strong>Prime Contractors</strong> — Deliver fixed-scope cloud and platform work with predictable
-      outcomes.
-    </li>
+  <ul class="icon-list">
+    <li><i class="fas fa-users"></i> <strong>Consulting Firms & Agencies</strong> — Expand delivery capacity without adding execution risk or permanent headcount.</li>
+    <li><i class="fas fa-network-wired"></i> <strong>Systems Integrators</strong> — Stabilize cloud and DevOps programs with senior oversight and disciplined execution.</li>
+    <li><i class="fas fa-project-diagram"></i> <strong>Prime Contractors</strong> — Deliver fixed-scope cloud and platform work with predictable outcomes.</li>
   </ul>
 </section>
 
@@ -149,17 +165,15 @@
 <section>
   <h2>When to Bring Us In</h2>
 
-  <ul>
-    <li>You’ve won the client, but delivery scope feels fragile</li>
-    <li>Architecture decisions are contested or unclear</li>
-    <li>Offshore execution is slipping and control needs to be restored</li>
-    <li>Production incidents are increasing and blame is spreading</li>
-    <li>You want an external technical authority <em>before</em> problems surface</li>
+  <ul class="icon-list">
+    <li><i class="fas fa-exclamation-triangle"></i> You’ve won the client, but delivery scope feels fragile</li>
+    <li><i class="fas fa-cogs"></i> Architecture decisions are contested or unclear</li>
+    <li><i class="fas fa-globe"></i> Offshore execution is slipping and control needs to be restored</li>
+    <li><i class="fas fa-bug"></i> Production incidents are increasing and blame is spreading</li>
+    <li><i class="fas fa-user-shield"></i> You want an external technical authority <em>before</em> problems surface</li>
   </ul>
 
-  <p>
-    If something feels “off,” it usually is. We help you catch it early.
-  </p>
+  <p>If something feels “off,” it usually is. We help you catch it early.</p>
 </section>
 
 <div class="divider"></div>
@@ -168,34 +182,32 @@
   <h2>What We Do</h2>
 
   <h3>Cloud & DevOps Risk Reset (6–8 Weeks)</h3>
-  <p>
-    A fixed-scope engagement designed to de-risk delivery before or during execution.
-  </p>
+  <p>A fixed-scope engagement designed to de-risk delivery before or during execution.</p>
 
-  <ul>
-    <li>Defensible cloud architecture decisions</li>
-    <li>Modernized CI/CD pipelines with fewer failure paths</li>
-    <li>Maintainable Infrastructure-as-Code standards</li>
-    <li>Monitoring and alerting that reduce noise</li>
-    <li>Security and reliability aligned with production reality</li>
-    <li>Clean documentation and handover</li>
+  <ul class="icon-list">
+    <li><i class="fas fa-server"></i> Defensible cloud architecture decisions</li>
+    <li><i class="fas fa-code-branch"></i> Modernized CI/CD pipelines with fewer failure paths</li>
+    <li><i class="fas fa-project-diagram"></i> Maintainable Infrastructure-as-Code standards</li>
+    <li><i class="fas fa-eye"></i> Monitoring and alerting that reduce noise</li>
+    <li><i class="fas fa-shield-alt"></i> Security and reliability aligned with production reality</li>
+    <li><i class="fas fa-file-alt"></i> Clean documentation and handover</li>
   </ul>
 
   <p><strong>Typical engagement:</strong> $25K–$45K</p>
 
   <h3>Platform Reliability & SRE Enablement</h3>
-  <ul>
-    <li>Production readiness assessments</li>
-    <li>Incident response and escalation models</li>
-    <li>Alert fatigue reduction</li>
-    <li>Capacity and performance risk planning</li>
+  <ul class="icon-list">
+    <li><i class="fas fa-tools"></i> Production readiness assessments</li>
+    <li><i class="fas fa-bell"></i> Incident response and escalation models</li>
+    <li><i class="fas fa-volume-up"></i> Alert fatigue reduction</li>
+    <li><i class="fas fa-chart-line"></i> Capacity and performance risk planning</li>
   </ul>
 
   <h3>AI-Augmented DevOps (Optional)</h3>
-  <ul>
-    <li>Infrastructure and configuration reviews</li>
-    <li>Drift and policy deviation detection</li>
-    <li>Cost and reliability insight generation</li>
+  <ul class="icon-list">
+    <li><i class="fas fa-robot"></i> Infrastructure and configuration reviews</li>
+    <li><i class="fas fa-project-diagram"></i> Drift and policy deviation detection</li>
+    <li><i class="fas fa-dollar-sign"></i> Cost and reliability insight generation</li>
   </ul>
 </section>
 
@@ -203,6 +215,9 @@
 
 <section>
   <h2>How Engagements Work</h2>
+
+  <!-- Free placeholder process diagram -->
+  <img src="https://via.placeholder.com/700x300?text=Process+Diagram" alt="Engagement Process Diagram" class="process-diagram">
 
   <ol>
     <li><strong>Scope & Architecture Review</strong> — Objectives, constraints, and risks clarified up front</li>
@@ -219,17 +234,15 @@
 <section>
   <h2>Why Agencies Choose Ventebra</h2>
 
-  <ul>
-    <li>Decades of experience across infrastructure and production systems</li>
-    <li>Deep familiarity with how cloud and DevOps projects actually fail</li>
-    <li>US-based senior technical leadership</li>
-    <li>Disciplined offshore delivery — no junior churn</li>
-    <li>Strong documentation and handover standards</li>
+  <ul class="icon-list">
+    <li><i class="fas fa-briefcase"></i> Decades of experience across infrastructure and production systems</li>
+    <li><i class="fas fa-exclamation-circle"></i> Deep familiarity with how cloud and DevOps projects actually fail</li>
+    <li><i class="fas fa-user-tie"></i> US-based senior technical leadership</li>
+    <li><i class="fas fa-user-check"></i> Disciplined offshore delivery — no junior churn</li>
+    <li><i class="fas fa-file-contract"></i> Strong documentation and handover standards</li>
   </ul>
 
-  <p>
-    Our value is not speed. It’s preventing expensive mistakes.
-  </p>
+  <p>Our value is not speed. It’s preventing expensive mistakes.</p>
 </section>
 
 <div class="divider"></div>
@@ -237,12 +250,12 @@
 <section>
   <h2>Our Offshore Delivery Model</h2>
 
-  <ul>
-    <li>Senior engineers only</li>
-    <li>Documented delivery processes</li>
-    <li>Secure access and compliance practices</li>
-    <li>Regular checkpoints with US time-zone overlap</li>
-    <li>Transparent progress and risk reporting</li>
+  <ul class="icon-list">
+    <li><i class="fas fa-user-shield"></i> Senior engineers only</li>
+    <li><i class="fas fa-book"></i> Documented delivery processes</li>
+    <li><i class="fas fa-lock"></i> Secure access and compliance practices</li>
+    <li><i class="fas fa-clock"></i> Regular checkpoints with US time-zone overlap</li>
+    <li><i class="fas fa-eye"></i> Transparent progress and risk reporting</li>
   </ul>
 
   <p>Execution without surprises.</p>
@@ -253,18 +266,11 @@
 <section id="contact" class="contact">
   <h2>Request a Technical Risk Review</h2>
 
-  <p>
-    If you’re planning or already executing a cloud or DevOps program, let’s talk.
-  </p>
+  <p>If you’re planning or already executing a cloud or DevOps program, let’s talk.</p>
 
-  <p>
-    We’ll assess scope, risk areas, and where experienced judgment can save time,
-    money, and reputation.
-  </p>
+  <p>We’ll assess scope, risk areas, and where experienced judgment can save time, money, and reputation.</p>
 
-  <p>
-    Email: <strong>hello@ventebra.com</strong>
-  </p>
+  <p>Email: <strong>hello@ventebra.com</strong></p>
 </section>
 
 <footer>
