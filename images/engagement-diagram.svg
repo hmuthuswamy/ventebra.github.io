@@ -1,0 +1,68 @@
+<svg width="900" height="240" viewBox="0 0 900 240" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .box {
+      fill: #f9f9f9;
+      stroke: #d0d7de;
+      stroke-width: 1.5;
+      rx: 10;
+    }
+    .title {
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      fill: #0a2540;
+    }
+    .desc {
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      fill: #333;
+    }
+    .arrow {
+      stroke: #0078ff;
+      stroke-width: 2;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#0078ff"/>
+    </marker>
+  </defs>
+
+  <!-- Box 1 -->
+  <rect class="box" x="20" y="60" width="190" height="120"/>
+  <text class="title" x="35" y="90">Architecture & Risk Review</text>
+  <text class="desc" x="35" y="115">Scope, failure modes,</text>
+  <text class="desc" x="35" y="135">delivery plan</text>
+
+  <!-- Arrow 1 -->
+  <line class="arrow" x1="210" y1="120" x2="270" y2="120"/>
+
+  <!-- Box 2 -->
+  <rect class="box" x="270" y="60" width="190" height="120"/>
+  <text class="title" x="285" y="90">Offshore Execution</text>
+  <text class="desc" x="285" y="115">Senior engineers,</text>
+  <text class="desc" x="285" y="135">controlled scope</text>
+
+  <!-- Arrow 2 -->
+  <line class="arrow" x1="460" y1="120" x2="520" y2="120"/>
+
+  <!-- Box 3 -->
+  <rect class="box" x="520" y="60" width="190" height="120"/>
+  <text class="title" x="535" y="90">QA, Security & Reliability</text>
+  <text class="desc" x="535" y="115">Production readiness,</text>
+  <text class="desc" x="535" y="135">risk validation</text>
+
+  <!-- Arrow 3 -->
+  <line class="arrow" x1="710" y1="120" x2="770" y2="120"/>
+
+  <!-- Box 4 -->
+  <rect class="box" x="770" y="60" width="190" height="120"/>
+  <text class="title" x="785" y="90">Clean Handover</text>
+  <text class="desc" x="785" y="115">Docs, walkthroughs,</text>
+  <text class="desc" x="785" y="135">optional support</text>
+</svg>
+
