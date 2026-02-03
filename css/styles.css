@@ -68,17 +68,39 @@ p {
 a {
   color: #2563eb;
   text-decoration: none;
-  transition: color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 a:hover {
   color: #1d4ed8;
+  transform: translateY(-1px);
 }
 
 /* ======================
-   Cards (key hierarchy)
+   Buttons
    ====================== */
-.card {
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  color: #ffffff;
+  padding: 14px 28px;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.15);
+  transition: all 0.25s ease;
+}
+
+.cta-button:hover {
+  background: linear-gradient(90deg, #1e40af, #2563eb);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.25);
+  transform: translateY(-2px);
+}
+
+/* ======================
+   Cards / Highlights
+   ====================== */
+.card,
+.highlight {
   background: #ffffff;
   border-radius: 14px;
   padding: 36px;
@@ -86,50 +108,16 @@ a:hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+.card:hover,
+.highlight:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.15);
 }
 
 /* ======================
    Hero Section
    ====================== */
-.hero {
-  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.hero p {
-  font-size: 18px;
-}
-
-/* ======================
-   Engagement Diagram
-   ====================== */
-.diagram {
-  margin-top: 40px;
-}
-
-.diagram img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* ======================
-   Subtle Section Variant
-   ====================== */
-.section-muted {
-  background-color: #f1f5f9;
-}
-
-/* ======================
-   Footer
-   ====================== */
-footer {
-  padding: 60px 0;
-  font-size: 14px;
-  color: #64748b;
-}
+header {
+  background: linear-gradient(rgba(10, 37, 64, 0.7), rgba(10, 37, 64, 0.7)),
+              url('../images/hero-bg.
 
