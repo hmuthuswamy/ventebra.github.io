@@ -1,0 +1,135 @@
+/* ======================
+   Global Reset
+   ====================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #0f172a;
+  background-color: #f8fafc;
+}
+
+/* ======================
+   Layout
+   ====================== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 90px 0;
+}
+
+section + section {
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ======================
+   Typography
+   ====================== */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+p {
+  max-width: 680px;
+  color: #334155;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #1d4ed8;
+}
+
+/* ======================
+   Cards (key hierarchy)
+   ====================== */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 36px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+}
+
+/* ======================
+   Hero Section
+   ====================== */
+.hero {
+  background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* ======================
+   Engagement Diagram
+   ====================== */
+.diagram {
+  margin-top: 40px;
+}
+
+.diagram img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ======================
+   Subtle Section Variant
+   ====================== */
+.section-muted {
+  background-color: #f1f5f9;
+}
+
+/* ======================
+   Footer
+   ====================== */
+footer {
+  padding: 60px 0;
+  font-size: 14px;
+  color: #64748b;
+}
+
